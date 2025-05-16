@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "stochastic-trading"
+version = "0.1.0"
+description = ""
+authors = ["chadrack mayamba"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.13"
+
+
+[tool.poetry.group.test.dependencies]
+pytest = "^8.3.5"
+pytest-cov = "^6.1.1"
+
+
+[tool.poetry.group.dev.dependencies]
+pre-commit = "^4.2.0"
+black = "^25.1.0"
+isort = "^6.0.1"
+
+
+[tool.poetry.group.lint.dependencies]
+flake8 = "^7.2.0"
+mypy = "^1.15.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
